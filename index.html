@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thomas Valencia | Portafolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    :root {
+      --azul: #00b3ff;
+      --azul-oscuro: #001f3f;
+      --fondo: #f0f9ff;
+      --blanco: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--fondo);
+      color: var(--azul-oscuro);
+      scroll-behavior: smooth;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #007cf0, #00dfd8);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .skills {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.7rem;
+    }
+
+    .skills span {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0.6rem 1.2rem;
+      border-radius: 20px;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: transform 0.3s ease;
+    }
+
+    .skills span:hover {
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: var(--azul);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .project {
+      background: white;
+      border: 1px solid #cce0f0;
+      border-radius: 12px;
+      padding: 1.2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+      color: var(--azul-oscuro);
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: var(--azul);
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #777;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--azul);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .profile-img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header data-aos="fade-down">
+    <img src="thomy.jpg" alt="Thomas Valencia" class="profile-img" />
+    <h1>Thomas Valencia</h1>
+    <div class="skills" data-aos="zoom-in" data-aos-delay="100">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>PHP</span>
+      <span>SQL</span>
+      <span>MySQL</span>
+      <span>Bootstrap</span>
+      <span>Git</span>
+    </div>
+  </header>
+
+  <!-- SOBRE MÍ -->
+  <section id="about" data-aos="fade-up">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy Thomas Valencia, estudiante de programación, con la fe de que voy a aprender y a ganar mucho en la programacion, espero crear sitios visualmente atractivos y bien estructurados. Se utilizar muy bien los lenguajes como HTML, PHP, CSS y SQL.
+    </p>
+    <p>
+      Busco oportunidades para seguir creciendo como programador, contribuir en proyectos reales y aplicar soluciones eficientes tanto en el frontend como en el backend.
+    </p>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="projects" data-aos="fade-up">
+    <h2>Proyectos</h2>
+
+    <div class="project">
+      <h3>Equilibrio Animal</h3>
+      <p>Aplicación web para gestionar veterinarias con sus propias bases de datos y funciones necesarias para ellas, realizada en HTML, PHP, CSS y MySQL.</p>
+      <a href="https://github.com/ThomyVM08/Equilibrio_Animal" target="_blank">Ver en GitHub</a>
+    </div>
+
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contacto</h2>
+    <p>¿Quieres trabajar conmigo o tienes alguna pregunta? Estoy disponible por correo o redes.</p>
+    <ul>
+      <li>Email: <a href="mailto:montoyathomas2008@gmail.com">montoyathomas2008@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/thomas-montoya-178b95335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
+      <li>GitHub: <a href="https://github.com/ThomyVM08" target="_blank"> ThomyVM08</a></li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer data-aos="fade-up" data-aos-delay="300">
+    © 2025 Thomas Valencia · <a href="mailto:montoyathomas2008@example.com">montoyathomas2008@gmail.com</a>
+  </footer>
+
+  <!-- AOS (animaciones al hacer scroll) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>
